@@ -1,0 +1,41 @@
+.nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #f9f9fa;
+  padding: 20px 50px;
+  border-top: 1px solid rgb(0, 0, 0, 0.1);
+}
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__link {
+  position: relative;
+}
+
+.nav__notification {
+  background-color: tomato;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+  position: absolute;
+  top: -23px;
+  left: 20px;
+}
+
+.nav__newcheckmark {
+  width: 5px;
+  height: 5px;
+  background-color: tomato;
+  border-radius: 50%;
+  position: absolute;
+  right: -5px;
+}
