@@ -17,25 +17,16 @@
 }
 
 .nav__notification {
-  background-color: tomato;
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  font-weight: 600;
   position: absolute;
   top: -23px;
   left: 20px;
 }
 
 .nav__newcheckmark {
-  width: 5px;
+  /* width: 5px;
   height: 5px;
   background-color: tomato;
-  border-radius: 50%;
+  border-radius: 50%; */
   position: absolute;
   right: -5px;
 }
