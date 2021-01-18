@@ -14,7 +14,7 @@
   width: 100vw;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   animation: bounce-in-bottom 1s both;
 }
@@ -26,9 +26,6 @@
   width: 400px;
   font-weight: 500;
   border: 1px solid black;
-}
-.no-mobile__content img {
-  margin-bottom: 150px;
 }
 @media screen and (max-width: 645px) {
   #no-mobile {
