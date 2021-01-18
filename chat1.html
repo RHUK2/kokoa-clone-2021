@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="icon"
+      href="https://images4.fanpop.com/image/photos/21600000/Spongebob-spongebob-squarepants-21699967-200-200.jpg"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>chat - SpongeBob Talk</title>
+  </head>
+  <body id="chat-screen">
+    <!-- status-bar -->
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>In the Water</span>
+        <span class="status-bar__bubble-ico">
+          <i class="far fa-circle"></i>
+          <i class="far fa-circle fa-xs"></i>
+        </span>
+      </div>
+      <div class="status-bar__column">
+        <span>12:00</span>
+      </div>
+      <div class="status-bar__column">
+        <span>50%</span>
+        <i class="fas fa-battery-half fa-lg"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+    <!-- alt-header -->
+    <header class="alt-header">
+      <div class="alt-header__column">
+        <a href="chats.html">
+          <i class="fas fa-angle-left fa-2x"></i>
+        </a>
+      </div>
+      <div class="alt-header__column">
+        <h1 class="alt-header__title">Patrick Star</h1>
+      </div>
+      <div class="alt-header__column">
+        <span><i class="fas fa-search fa-lg"></i></span>
+        <span><i class="fas fa-bars fa-lg"></i></span>
+      </div>
+    </header>
+    <!-- main-screen -->
+    <main class="main-screen main-chat">
+      <div class="chat__timestamp">Sunday, January 18, 2021</div>
+
+      <div class="message-row">
+        <img
+          src="https://pbs.twimg.com/profile_images/883310597080612864/7bpQshsQ_400x400.jpg"
+        />
+        <div class="message-row__content">
+          <span class="message__author">Patrick Star</span>
+          <div class="message__info">
+            <span class="message__bubble">Hi, Spongebob!</span>
+            <span class="message__time">10:50</span>
+          </div>
+        </div>
+      </div>
+      <div class="message-row message-row--own">
+        <div class="message-row__content">
+          <div class="message__info">
+            <span class="message__bubble">Hi, Patrick!</span>
+            <span class="message__time">11:01</span>
+          </div>
+        </div>
+      </div>
+      <div class="message-row">
+        <img
+          src="https://pbs.twimg.com/profile_images/883310597080612864/7bpQshsQ_400x400.jpg"
+        />
+        <div class="message-row__content">
+          <span class="message__author">Patrick Star</span>
+          <div class="message__info">
+            <span class="message__bubble">Are you free today?</span>
+            <span class="message__time">11:30</span>
+            <span class="message__noread">1</span>
+          </div>
+        </div>
+      </div>
+      <div class="message-row">
+        <img
+          src="https://pbs.twimg.com/profile_images/883310597080612864/7bpQshsQ_400x400.jpg"
+        />
+        <div class="message-row__content">
+          <span class="message__author">Patrick Star</span>
+          <div class="message__info">
+            <span class="message__bubble">Let's go hunting jellyfish</span>
+            <span class="message__time">11:30</span>
+            <span class="message__noread">1</span>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- reply -->
+    <form class="reply">
+      <div class="reply__column">
+        <i class="far fa-plus-square fa-lg"></i>
+      </div>
+      <div class="reply__column">
+        <input type="text" placeholder="Write a message..." />
+        <i class="far fa-smile-wink fa-lg"></i>
+        <button>
+          <i class="fas fa-arrow-up"></i>
+        </button>
+      </div>
+    </form>
+    <!-- no-mobile -->
+    <div id="no-mobile">
+      <div class="no-mobile__content">
+        <div class="no-mobile__warning">
+          Your screen is so big! <br />
+          If you reduce the screen size, you can see the spongebob talk.
+        </div>
+        <img src="screenshots/crap-ceo.png" />
+      </div>
+    </div>
+    <!-- font-awesome -->
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

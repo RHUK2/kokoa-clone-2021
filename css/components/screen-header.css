@@ -1,11 +1,17 @@
 .screen-header {
   padding: var(--horizontal-space);
-  padding-top: 46px;
-  padding-bottom: 20px;
+  background-color: white;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  box-shadow: 0px 1px 5px black;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  position: fixed;
+  top: 30px;
+  z-index: 1;
 }
 .screen-header__title {
   font-size: 32px;
@@ -22,6 +28,43 @@
   top: -5px;
   right: -5px;
 }
+.screen-header .fa-search:hover {
+  animation: rotate90 1s linear infinite;
+}
+.screen-header .fa-music:hover {
+  animation: beat 0.5s linear infinite;
+}
+.screen-header .fa-cog:hover {
+  animation: rotateCog 1s linear infinite;
+}
+.screen-header .fa-comment-dots {
+  transition: color 0.5s ease-in-out;
+}
+.screen-header .fa-comment-dots:hover {
+  color: tomato;
+}
+@keyframes rotate90 {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  50% {
+    transform: rotateZ(90deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+  }
+}
+@keyframes beat {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
 @keyframes rotateCog {
   from {
     transform: none;
@@ -29,7 +72,4 @@
   to {
     transform: rotateZ(360deg);
   }
-}
-.screen-header .fa-cog:hover {
-  animation: rotateCog 1s linear infinite;
 }

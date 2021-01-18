@@ -1,11 +1,17 @@
 .alt-header {
   padding: var(--horizontal-space);
-  padding-top: 33px;
-  padding-bottom: 20px;
-  margin-bottom: 15px;
+  background-color: white;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  box-shadow: 0px 1px 5px black;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+  top: 30px;
+  z-index: 1;
 }
 .alt-header__column {
   width: 33%;
@@ -27,4 +33,26 @@
 }
 .alt-header__column span:last-child {
   margin-left: 20px;
+}
+.alt-header .fa-angle-left,
+.alt-header .fa-bars {
+  transition: transform 0.3s linear;
+}
+.alt-header .fa-angle-left:hover,
+.alt-header .fa-bars:hover {
+  transform: scale(1.3);
+}
+.alt-header .fa-search:hover {
+  animation: rotate90 1s linear infinite;
+}
+@keyframes rotate90 {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  50% {
+    transform: rotateZ(90deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+  }
 }
