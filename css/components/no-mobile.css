@@ -4,7 +4,8 @@
   top: 0;
   height: 100%;
   width: 100%;
-  background-image: url(https://w.namu.la/s/c73188f0bfa3eccfadbf96a03b8c9fdf98a140fb63ee806b3599f5bd9deff555d19767d15c0636303c63f50e1ddd3b94e236beec2777509eb843aa8d614fd5c3e4038321e069df92647532ecd36a703790c4c374a1af5791c99f786f2df630b9);
+  /* background-color: white; */
+  background: url("../assets/krusty-krap.jpg") no-repeat center center;
   background-size: 100% 100%;
   opacity: 1;
 }
@@ -23,12 +24,11 @@
   font-size: 25px;
   padding: 35px;
   width: 400px;
-  /* height: 0px; */
   font-weight: 500;
   border: 1px solid black;
 }
 .no-mobile__content img {
-  margin-bottom: 30px;
+  margin-bottom: 150px;
 }
 @media screen and (max-width: 645px) {
   #no-mobile {
